@@ -6,4 +6,4 @@ def get_val(collection: dict, key, default='git'):
         :return: Значение из словаря по переданному ключу, если ключ существует. В ином случае возвращается значение
     default
         """
-    pass
+    return collection[key] if key in collection else default
