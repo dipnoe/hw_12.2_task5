@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "hw-12-2-task5"
+version = "0.1.0"
+description = ""
+authors = ["Vagner <dipnoe@gmail.com>"]
+readme = "README.md"
+packages = [{include = "hw_12"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
