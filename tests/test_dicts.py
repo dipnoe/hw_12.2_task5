@@ -9,3 +9,7 @@ from utils import dicts
                                                               ])
 def test_get_val(collection, key, expected_result):
     assert dicts.get_val(collection, key) == expected_result
+
+
+def test_get_val_change_default():
+    assert dicts.get_val({"American Idiot": "Holiday"}, "21 Guns", "Another album") == "Another album"
